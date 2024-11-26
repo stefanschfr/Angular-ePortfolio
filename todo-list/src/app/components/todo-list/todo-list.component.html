@@ -7,9 +7,11 @@
   </div>
 
   <ul>
-    @for (todo of todos; track $index){
-      {{ todo }}
-      <button (click)="deleteTodo($index)">Löschen</button>
-    }
+        @for (todo of todos; track $index){
+          <li>
+            {{ todo }}
+            <button (click)="deleteTodo($index)">Löschen</button>
+          </li>
+        }
   </ul>
 </div>
